@@ -1,3 +1,5 @@
+/* React, ReactDOM 모듈 불러오기 및 버전 확인 -------------------------------------- */
+
 // React 모듈을 불러오기
 import * as React from 'react';
 
@@ -10,7 +12,10 @@ import * as ReactDOM from 'react-dom';
 // ReactDOM 버전 확인하기
 // console.log(`ReactDOM version: ${ReactDOM.version}`);
 
-globalThis.React = React;
+
+
+
+/* React 요소란? --------------------------------------------------------------- */
 
 // React 요소 작성 (React API)
 const appElement = React.createElement(
@@ -35,6 +40,11 @@ const appElement = React.createElement(
 );
 console.log(appElement);
 
+
+
+
+/* JSX를 사용하는 이유 ------------------------------------------------------------ */
+
 // React 요소 작성 (with JSX)
 const appElementJSX = (
   <div 
@@ -50,8 +60,16 @@ const appElementJSX = (
 
 console.log(appElementJSX);
 
+
+
+
+/* React 요소 vs. 컴포넌트 -------------------------------------------------------- */
+
 // App 함수 컴포넌트 만들기
 
+
+
+/* React 요소 트리를 DOM에 렌더링하려면? ---------------------------------------------- */
 
 // ReactDOM.createRoot() 를 사용해서 DOM 요소를 ReactDOMRoot 객체로 생성
 // ReactDOMRoot.render() 메서드로 App을 화면에 표시(렌더링)
