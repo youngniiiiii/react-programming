@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import HeaderBar from "./HeaderBar";
 import FooterBar from './FooterBar';
 
