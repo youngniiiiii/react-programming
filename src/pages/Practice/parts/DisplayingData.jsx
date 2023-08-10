@@ -1,7 +1,7 @@
 // 유틸리티 함수 호출
 import { getRandom } from '@/utils/getRandomMinMax';
 
-function DisplayingData() {
+function DisplayingData({ statusMessage }) {
   return (
     <>
       <dt>데이터 바인딩(data binding)</dt>
