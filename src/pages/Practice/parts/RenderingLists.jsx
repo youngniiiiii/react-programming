@@ -1,3 +1,5 @@
+import { reactLibrary } from './data';
+
 function RenderingLists({ statusMessage, renderList }) {
   return (
     <>
@@ -29,6 +31,18 @@ function RenderingLists({ statusMessage, renderList }) {
         </p>
         <dl className="reactLibrary">
           {/* 여기서 설명 목록으로 리스트 렌더링 합니다. */}
+          {/* reactLibrary 객체를 순환해서 리스트 렌더링 */}
+          {/* <pre>{JSON.stringify(reactLibrary, null, 2)}</pre> */}
+          {/* <pre>{JSON.stringify(Object.entries(reactLibrary), null, 2)}</pre> */}
+          {Object.entries(reactLibrary).map(([key, value]) => {
+            return (
+              <div key={key}>
+                <dt>{key}</dt>
+                <dd>{value}</dd>
+              </div>
+              
+            );
+          })}
         </dl>
       </dd>
     </>
