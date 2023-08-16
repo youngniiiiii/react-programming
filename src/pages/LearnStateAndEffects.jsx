@@ -21,13 +21,26 @@ function LearnStateAndEffects() {
       <h2 className="text-indigo-600 text-2xl uppercase">
         Learn State And Effects {count}
       </h2>
-      <button
-        type="button"
-        onClick={() => setCount(count + step)}
-        className="py-0.5 px-2.5 border rounded-md border-slate-600"
-      >
-        +{step}
-      </button>
+      <div>
+        <div>
+          <label htmlFor="">step</label>
+          <input
+            type="number"
+            value={step}
+            onChange={(e) => {
+              console.log(e.target.value);
+            }}
+            className="w-12 py-1 px-2 border-slate-300 border rounded-full"
+          />
+        </div>
+        <button
+          type="button"
+          onClick={() => setCount(count + step)}
+          className="py-0.5 px-2.5 border rounded-md border-slate-600"
+        >
+          +{step}
+        </button>
+      </div>
     </div>
   );
 }
